@@ -1,0 +1,59 @@
+body {
+  width: 100%;
+  background-color: palevioletred;
+  color: white;
+}
+
+main {
+  width: 30%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1:hover {
+  color: black;
+}
+
+p {
+  text-align: center;
+}
+
+span {
+  display: block;
+  padding: 1.5em;
+}
+
+.black {
+  color: black;
+}
+
+.sans {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.m-center {
+  margin: 0 auto;
+}
+
+#quote {
+  font-size: 3em;
+}
+
+p.black {
+  width: 70%;
+}
+
+li {
+  margin: 2em 0;
+}
+
+img {
+  width: 40%;
+  display: block;
+}
