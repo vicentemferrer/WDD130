@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Raleway&family=Roboto&display=swap');
+
+:root {
+  --heading-font: "Koulen";
+  --paragraph-font: "Raleway", "Roboto", sans-serif;
+
+  --headline-color-on-white: #114992;
+  --headline-color-on-color: #f57729;
+  --paragraph-color-on-white: #18020c;
+  --paragraph-color-on-color: white; 
+  --paragraph-background-color: #18020c;
+  --nav-link-color: white;
+  --nav-background-color: #18020c;
+  --nav-hover-link-color: #18020c;
+  --nav-hover-background-color: white;
+
+  --primary-color: #114992;
+  --secondary-color: #43c59e;
+  --accent1-color: #18020c;
+  --accent2-color: #f57729;
+}
+
 body {
   background-color: white;
+  font-family: var(--paragraph-font);
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
 }
 
 #content {
@@ -28,8 +58,13 @@ main section {
   width: 80px;
 }
 
+#logo_link {
+  padding-top: 5px;
+}
+
 nav a {
   color: white;
+  padding: 35px;
 }
 
 nav a:hover {
@@ -39,10 +74,29 @@ nav a:hover {
 
 .home-title {
   color: #f57729;
+  font-family: var(--heading-font);
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+main section img {
+  box-sizing: border-box;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+
+.card-img {
+  border: 10px solid var(--accent1-color);
 }
 
 h4 {
   color: white;
+}
+
+.icon {
+  padding-top: 10px;
 }
 
 #background {
@@ -53,6 +107,10 @@ h4 {
 .book, .join {
   background-color: #43c59e;
   color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -62,17 +120,25 @@ h4 {
 
 .msg {
   background-color: white;
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 .msg h2 {
   color: #114992;
+  font-family: var(--heading-font);
 }
+
 .msg p {
   color: #18020c;
+  font-size: .8em;
+  padding: 15px;
 }
 
 footer {
   background-color: #18020c;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer a {
@@ -89,4 +155,8 @@ footer p {
 
 footer p a:hover {
   text-decoration: underline;
+}
+
+footer .social img {
+  padding-top: 15px;
 }
