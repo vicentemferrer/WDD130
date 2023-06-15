@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: darkslategray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Slab";
+}
+
+#grid-container {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+img {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#white {
+    background-color: white;
+    color: gray;
+    text-align: center;
+    padding: 1.25em;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+#white h1 {
+    color: black;
+}
+
+#smaller {
+    font-size: smaller;
+    color: royalblue;
+}
+
+#white p:not(#smaller) {
+    margin-top: 1em;
+}
+
+#blue {
+    background-color: royalblue;
+    color: white;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+#blue p {
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+span {
+    display: block;
+}
+
+.upper {
+    font-variant: small-caps;
+}
+
+.number {
+    font-size: 1.5em;
+}
+
+.number sup {
+    font-size: .65em !important;
+}
+
+#blue p:nth-child(1) {
+    grid-column: 1/2;
+}
+
+#blue p:nth-child(2) {
+    grid-column: 2/3;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#blue p:nth-child(3) {
+    grid-column: 3/4;
+}
