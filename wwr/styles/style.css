@@ -107,7 +107,7 @@ nav a:hover {
   margin-top: -60px;
 }
 
-.home-title {
+.home-title, .form-title {
   color: #f57729;
   font-family: var(--heading-font);
   font-size: 3em;
@@ -115,7 +115,7 @@ nav a:hover {
   text-shadow: 5px 5px 10px #18020c;
 }
 
-.home-grid {
+.home-grid, .form-grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
 }
@@ -177,7 +177,7 @@ h4 {
   box-shadow: 5px 5px 10px #6f7364;
 }
 
-.book, .join {
+.book, .join, .submit {
   background-color: #43c59e;
   color: white;
   font-size: 18px;
@@ -186,7 +186,7 @@ h4 {
   border-radius: 5px;
 }
 
-.book:hover, .join:hover {
+.book:hover, .join:hover, .submit:hover {
   background-color: white;
   color: #43c59e;
 }
@@ -375,6 +375,59 @@ hr {
 #third-post img:nth-of-type(even) {
   float:left;
   margin-left: 0;
+}
+
+.form-title {
+  margin-top: 70px;
+}
+
+form {
+  grid-column: 3/9;
+  margin: 50px 0;
+  padding: 60px;
+  border-radius: 10px;
+  background-color: #18020c;
+  color: #f57729;
+  font-weight: bolder;
+  text-align: center;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  font-size: .85em;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 0;
+  background-color: antiquewhite;
+}
+
+textarea {
+  height: 150px;
+}
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;      
+}
+
+.moveDown {
+  margin-top: 3em;
 }
 
 @media screen and (width <= 900px) {
