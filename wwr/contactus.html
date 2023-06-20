@@ -33,13 +33,13 @@
 			<div id="feedback"></div>
       <form action="/my-handling-form-page" method="post">
 				<label>Name:
-					<input type="text" name="name" placeholder="e.g. Benito Juárez">
+					<input type="text" name="user_name" placeholder="e.g. Benito Juárez">
 				</label>
 				<label>Email:
-					<input type="email" placeholder="e.g. example@example.com">
+					<input type="email" name="email" placeholder="e.g. example@example.com">
 				</label>
 				<label>Message:
-					<textarea></textarea>
+					<textarea name="message"></textarea>
 				</label>
 				<button type="submit" class="submit">
 					Send your Message
@@ -63,7 +63,7 @@
       </div>
     </footer>
   </div>
-	<script>
+	<script type="text/javascript">
     // get the feedback div element so we can do something with it.
     const feedbackElement = document.getElementById('feedback');
     // get the form so we can read what was entered in it.
