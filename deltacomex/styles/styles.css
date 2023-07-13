@@ -170,7 +170,7 @@ section h3.secondary-title {
   border: 1px solid white;
 }
 
-article {
+.article {
   grid-row: 2/4;
 }
 
